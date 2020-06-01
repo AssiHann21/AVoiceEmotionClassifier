@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE11D3DB24846FFE00799E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11D3DA24846FFE00799E9F /* AppDelegate.swift */; };
+		BE11D3DF24846FFE00799E9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11D3DE24846FFE00799E9F /* ViewController.swift */; };
+		BE11D3E42484700300799E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE11D3E32484700300799E9F /* Assets.xcassets */; };
+		BE11D3E72484700300799E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE11D3E52484700300799E9F /* LaunchScreen.storyboard */; };
+		BE11D3F12484705200799E9F /* MySoundClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BE11D3F02484705200799E9F /* MySoundClassifier 1.mlmodel */; };
+		BE11D406248496D400799E9F /* libAudioPreprocessing.dylib in Resources */ = {isa = PBXBuildFile; fileRef = BE11D3FB24848A9400799E9F /* libAudioPreprocessing.dylib */; };
+		BE11D40A2484973300799E9F /* libAudioPreprocessing.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BE11D3FB24848A9400799E9F /* libAudioPreprocessing.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE11D4092484971900799E9F /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE11D40A2484973300799E9F /* libAudioPreprocessing.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE11D3D724846FFE00799E9F /* AVoiceEmotionClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVoiceEmotionClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE11D3DA24846FFE00799E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE11D3DE24846FFE00799E9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE11D3E32484700300799E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE11D3E62484700300799E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE11D3E82484700300799E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE11D3F02484705200799E9F /* MySoundClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "MySoundClassifier 1.mlmodel"; path = "../../../../MySoundClassifier 1.mlmodel"; sourceTree = "<group>"; };
+		BE11D3FB24848A9400799E9F /* libAudioPreprocessing.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAudioPreprocessing.dylib; path = ../../../libAudioPreprocessing/arm64/libAudioPreprocessing.dylib; sourceTree = "<group>"; };
+		BE11D3FE2484932600799E9F /* arm64 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = arm64; path = ../../../../Downloads/libAudioPreprocessing/arm64; sourceTree = "<group>"; };
+		BE11D4022484952D00799E9F /* libAudioPreprocessing.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAudioPreprocessing.dylib; path = ../../../../../Downloads/libAudioPreprocessing/arm64/libAudioPreprocessing.dylib; sourceTree = "<group>"; };
+		BE11D404248496A500799E9F /* arm64 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = arm64; path = ../../../../../Downloads/libAudioPreprocessing/arm64; sourceTree = "<group>"; };
+		BE11D40B248497E300799E9F /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		BE11D40E248497FF00799E9F /* libAudioIssueDetector.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libAudioIssueDetector.tbd; path = usr/lib/libAudioIssueDetector.tbd; sourceTree = SDKROOT; };
+		BE11D40F2484981800799E9F /* libAccessibility.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libAccessibility.tbd; path = usr/lib/libAccessibility.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE11D3D424846FFE00799E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE11D3CE24846FFE00799E9F = {
+			isa = PBXGroup;
+			children = (
+				BE11D3D924846FFE00799E9F /* AVoiceEmotionClassifier */,
+				BE11D3D824846FFE00799E9F /* Products */,
+				BE11D3FA24848A9400799E9F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE11D3D824846FFE00799E9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE11D3D724846FFE00799E9F /* AVoiceEmotionClassifier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE11D3D924846FFE00799E9F /* AVoiceEmotionClassifier */ = {
+			isa = PBXGroup;
+			children = (
+				BE11D404248496A500799E9F /* arm64 */,
+				BE11D3DA24846FFE00799E9F /* AppDelegate.swift */,
+				BE11D3DE24846FFE00799E9F /* ViewController.swift */,
+				BE11D3F02484705200799E9F /* MySoundClassifier 1.mlmodel */,
+				BE11D4022484952D00799E9F /* libAudioPreprocessing.dylib */,
+				BE11D3E32484700300799E9F /* Assets.xcassets */,
+				BE11D3E52484700300799E9F /* LaunchScreen.storyboard */,
+				BE11D3E82484700300799E9F /* Info.plist */,
+			);
+			path = AVoiceEmotionClassifier;
+			sourceTree = "<group>";
+		};
+		BE11D3FA24848A9400799E9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE11D40F2484981800799E9F /* libAccessibility.tbd */,
+				BE11D40E248497FF00799E9F /* libAudioIssueDetector.tbd */,
+				BE11D40B248497E300799E9F /* XcodeKit.framework */,
+				BE11D3FE2484932600799E9F /* arm64 */,
+				BE11D3FB24848A9400799E9F /* libAudioPreprocessing.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE11D3D624846FFE00799E9F /* AVoiceEmotionClassifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE11D3EB2484700300799E9F /* Build configuration list for PBXNativeTarget "AVoiceEmotionClassifier" */;
+			buildPhases = (
+				BE11D3D324846FFE00799E9F /* Sources */,
+				BE11D3D424846FFE00799E9F /* Frameworks */,
+				BE11D3D524846FFE00799E9F /* Resources */,
+				BE11D4092484971900799E9F /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVoiceEmotionClassifier;
+			productName = AVoiceEmotionClassifier;
+			productReference = BE11D3D724846FFE00799E9F /* AVoiceEmotionClassifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE11D3CF24846FFE00799E9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Assiatou Hann";
+				TargetAttributes = {
+					BE11D3D624846FFE00799E9F = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = BE11D3D224846FFE00799E9F /* Build configuration list for PBXProject "AVoiceEmotionClassifier" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE11D3CE24846FFE00799E9F;
+			productRefGroup = BE11D3D824846FFE00799E9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE11D3D624846FFE00799E9F /* AVoiceEmotionClassifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE11D3D524846FFE00799E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE11D406248496D400799E9F /* libAudioPreprocessing.dylib in Resources */,
+				BE11D3E72484700300799E9F /* LaunchScreen.storyboard in Resources */,
+				BE11D3E42484700300799E9F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE11D3D324846FFE00799E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE11D3F12484705200799E9F /* MySoundClassifier 1.mlmodel in Sources */,
+				BE11D3DF24846FFE00799E9F /* ViewController.swift in Sources */,
+				BE11D3DB24846FFE00799E9F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE11D3E52484700300799E9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE11D3E62484700300799E9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE11D3E92484700300799E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE11D3EA2484700300799E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE11D3EC2484700300799E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UGDJ49FNND;
+				INFOPLIST_FILE = AVoiceEmotionClassifier/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos13.5]" = "";
+				PRODUCT_BUNDLE_IDENTIFIER = Team.Assi.AVoiceEmotionClassifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE11D3ED2484700300799E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UGDJ49FNND;
+				INFOPLIST_FILE = AVoiceEmotionClassifier/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
+				PRODUCT_BUNDLE_IDENTIFIER = Team.Assi.AVoiceEmotionClassifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE11D3D224846FFE00799E9F /* Build configuration list for PBXProject "AVoiceEmotionClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE11D3E92484700300799E9F /* Debug */,
+				BE11D3EA2484700300799E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE11D3EB2484700300799E9F /* Build configuration list for PBXNativeTarget "AVoiceEmotionClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE11D3EC2484700300799E9F /* Debug */,
+				BE11D3ED2484700300799E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE11D3CF24846FFE00799E9F /* Project object */;
+}
